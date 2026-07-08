@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adinkra Interativa | Habilidades do Formador</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Macondo&family=Montserrat:wght@700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- TELA 1: ABERTURA -->
+  <section id="introScreen" class="screen intro-screen">
+    <div class="ambient-light ambient-light-gold"></div>
+    <div class="ambient-light ambient-light-green"></div>
+
+    <article class="intro-card">
+      <div class="intro-content">
+        <p class="intro-tag">FORMADORES EM AÇÃO</p>
+
+        <h1>
+          Adinkra<br />
+          Interativa
+        </h1>
+
+        <h2>
+          Cada raio aceso simboliza uma prática do formador em direção à
+          proficiência C1 ou C2.
+        </h2>
+
+        <button type="button" id="startExperienceButton" class="start-btn">
+          INICIAR EXPERIÊNCIA
+        </button>
+      </div>
+
+      <div class="intro-symbol-area" aria-hidden="true">
+        <svg class="intro-adinkra" viewBox="0 0 320 320">
+          <g transform="rotate(0 160 160)">
+            <rect x="145" y="32" width="30" height="105" rx="15"></rect>
+          </g>
+          <g transform="rotate(51.43 160 160)">
+            <rect x="145" y="32" width="30" height="105" rx="15"></rect>
+          </g>
+          <g transform="rotate(102.86 160 160)">
+            <rect x="145" y="32" width="30" height="105" rx="15"></rect>
+          </g>
+          <g transform="rotate(154.29 160 160)">
+            <rect x="145" y="32" width="30" height="105" rx="15"></rect>
+          </g>
+          <g transform="rotate(205.72 160 160)">
+            <rect x="145" y="32" width="30" height="105" rx="15"></rect>
+          </g>
+          <g transform="rotate(257.15 160 160)">
+            <rect x="145" y="32" width="30" height="105" rx="15"></rect>
+          </g>
+          <g transform="rotate(308.58 160 160)">
+            <rect x="145" y="32" width="30" height="105" rx="15"></rect>
+          </g>
+          <circle cx="160" cy="160" r="25"></circle>
+          <circle class="intro-hole" cx="160" cy="160" r="15"></circle>
+        </svg>
+
+        <p class="intro-symbol-text">
+          Uma experiência estética-formativa que relaciona cultura africana,
+          habilidades do formador, premissas pedagógicas e proficiência docente.
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <!-- TELA 2: EXPERIÊNCIA PRINCIPAL -->
+  <main id="adinkraScreen" class="screen adinkra-screen hidden-screen">
+    <button type="button" id="backHomeButton" class="back-home-btn">
+      VOLTAR
+    </button>
+
+    <section class="main-layout">
+      <aside class="skills-panel">
+        <p class="panel-tag">ESCOLHA UMA HABILIDADE</p>
+
+        <h1>Adinkra e ação formativa</h1>
+
+        <p class="panel-intro">
+          Clique em uma habilidade para acender um raio da Adinkra.
+        </p>
+
+        <div class="skill-list">
+          <button type="button" class="skill-btn" data-index="1">1. Sabedoria</button>
+          <button type="button" class="skill-btn" data-index="2">2. Criatividade</button>
+          <button type="button" class="skill-btn" data-index="3">3. Pensamento estratégico</button>
+          <button type="button" class="skill-btn" data-index="4">4. Inovação</button>
+          <button type="button" class="skill-btn" data-index="5">5. Adaptação</button>
+          <button type="button" class="skill-btn" data-index="6">6. Superação</button>
+          <button type="button" class="skill-btn" data-index="7">7. Inteligência e engenhosidade</button>
+        </div>
+      </aside>
+
+      <section class="center-action-panel">
+        <p id="centerInstruction" class="center-instruction">
+          Selecione uma habilidade para interagir com a Adinkra.
+        </p>
+
+        <button type="button" id="routeButton" class="route-btn hidden">
+          QUANDO ACONTECE NO ROTEIRO?
+        </button>
+      </section>
+
+      <section class="adinkra-panel">
+        <div class="adinkra-header">
+          <p class="panel-tag">ADINKRA INTERATIVA</p>
+
+          <h2>
+            Cada raio aceso simboliza uma prática do formador.
+          </h2>
+        </div>
+
+        <div class="adinkra-stage">
+          <div class="symbol-glow"></div>
+
+          <svg
+            class="adinkra-svg"
+            viewBox="0 0 320 320"
+            role="img"
+            aria-label="Símbolo Adinkra interativo com sete raios"
+          >
+            <g class="ray-group" data-index="1" transform="rotate(0 160 160)">
+              <rect class="ray-shape" x="145" y="32" width="30" height="105" rx="15"></rect>
+            </g>
+
+            <g class="ray-group" data-index="2" transform="rotate(51.43 160 160)">
+              <rect class="ray-shape" x="145" y="32" width="30" height="105" rx="15"></rect>
+            </g>
+
+            <g class="ray-group" data-index="3" transform="rotate(102.86 160 160)">
+              <rect class="ray-shape" x="145" y="32" width="30" height="105" rx="15"></rect>
+            </g>
+
+            <g class="ray-group" data-index="4" transform="rotate(154.29 160 160)">
+              <rect class="ray-shape" x="145" y="32" width="30" height="105" rx="15"></rect>
+            </g>
+
+            <g class="ray-group" data-index="5" transform="rotate(205.72 160 160)">
+              <rect class="ray-shape" x="145" y="32" width="30" height="105" rx="15"></rect>
+            </g>
+
+            <g class="ray-group" data-index="6" transform="rotate(257.15 160 160)">
+              <rect class="ray-shape" x="145" y="32" width="30" height="105" rx="15"></rect>
+            </g>
+
+            <g class="ray-group" data-index="7" transform="rotate(308.58 160 160)">
+              <rect class="ray-shape" x="145" y="32" width="30" height="105" rx="15"></rect>
+            </g>
+
+            <circle class="center-ring" cx="160" cy="160" r="25"></circle>
+            <circle class="center-hole" cx="160" cy="160" r="15"></circle>
+          </svg>
+        </div>
+
+        <div class="progress-box">
+          <span id="progressText">0 de 7 raios ativados</span>
+
+          <div class="progress-bar">
+            <div id="progressFill"></div>
+          </div>
+        </div>
+
+        <p id="summaryInstruction" class="summary-instruction">
+          Acenda os 7 raios da Adinkra para liberar a síntese da experiência.
+        </p>
+      </section>
+    </section>
+
+    <section class="bottom-actions">
+      <button type="button" id="resetButton" class="reset-btn">
+        REINICIAR EXPERIÊNCIA
+      </button>
+
+      <button type="button" id="summaryButton" class="summary-btn hidden" disabled>
+        SÍNTESE DA EXPERIÊNCIA
+      </button>
+    </section>
+  </main>
+
+  <!-- TELA 3: ROTEIRO -->
+  <section id="routeScreen" class="screen route-screen hidden-screen">
+    <div class="route-layout">
+      <p class="route-tag">QUANDO ACONTECE NO ROTEIRO?</p>
+
+      <h1 id="routeSkillTitle">Habilidade</h1>
+
+      <div class="route-badges">
+        <span id="routePremise">Premissa</span>
+        <span id="routeRay">Raio</span>
+      </div>
+
+      <section class="route-section">
+        <h2>Ação vinculada à premissa</h2>
+        <p id="routePhrase"></p>
+      </section>
+
+      <section class="route-section highlight-section">
+        <h2>Proficiência relacionada</h2>
+        <p id="routeProficiency"></p>
+      </section>
+
+      <button type="button" id="returnToAdinkraButton" class="return-btn">
+        RETORNAR À ADINKRA
+      </button>
+    </div>
+  </section>
+
+  <!-- TELA 4: SÍNTESE -->
+  <section id="summaryScreen" class="screen summary-screen hidden-screen">
+    <article class="summary-content">
+      <p class="route-tag">SÍNTESE DA EXPERIÊNCIA</p>
+
+      <h1>Adinkra, cultura africana e ação formativa</h1>
+
+      <p>
+        Esta Adinkra faz parte da cultura africana e se relaciona às ações do
+        Formador que une sabedoria, criatividade, pensamento estratégico,
+        inovação, adaptação e superação.
+      </p>
+
+      <div class="summary-actions">
+        <button type="button" id="returnFromSummaryButton" class="return-btn">
+          RETORNAR À ADINKRA
+        </button>
+
+        <button type="button" id="thankYouButton" class="thank-btn">
+          OBRIGADO FORMADOR!
+        </button>
+      </div>
+    </article>
+  </section>
+
+  <!-- TELA 5: OBRIGADO FORMADOR -->
+  <section id="thankYouScreen" class="screen thank-you-screen hidden-screen">
+    <div class="thank-you-content">
+      <div class="thank-image-box">
+        <img
+          src="https://i.postimg.cc/90g7x5q4/Obrigado-Formador-pelo-seu-Trabalho.jpg"
+          alt="Obrigado Formador pelo seu Trabalho"
+        />
+      </div>
+
+      <div class="thank-buttons-row">
+        <button type="button" id="returnFromThankYouButton" class="return-btn">
+          RETORNAR À ADINKRA
+        </button>
+
+        <button type="button" id="backToSummaryButton" class="thank-btn">
+          VOLTAR À SÍNTESE
+        </button>
+
+        <button type="button" id="goToC2Button" class="c2-btn">
+          RUMO AO C2
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- TELA 6: RUMO AO C2 -->
+  <section id="c2Screen" class="screen c2-screen hidden-screen">
+    <div class="c2-overlay">
+      <div class="c2-actions">
+        <button type="button" id="returnFromC2Button" class="return-btn">
+          RETORNAR À ADINKRA
+        </button>
+
+        <button type="button" id="backToThankYouButton" class="thank-btn">
+          VOLTAR
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
